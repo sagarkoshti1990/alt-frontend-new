@@ -144,7 +144,7 @@ const h5pDiksh = {
   },
 };
 
-const metadata = window?.name ? JSON.parse(window.name) : h5pDiksh;
+const metadata = window?.name ? JSON.parse(window.name) : metadataDefault;
 // let metadata = { ...dynamicData, body: metadataDefault.body };
 // window.consoleAllow = true;
 
@@ -170,8 +170,8 @@ const playerConfig = {
     cdata: [],
     timeDiff: 0,
     objectRollup: {},
-    host: process.env.REACT_APP_BASE_URL,
-    //host: "https://sunbirdsaas.com",
+    // host: process.env.REACT_APP_BASE_URL,
+    host: "https://sunbirdsaas.com",
     endpoint: "",
     userData: metadata?.userData ? metadata?.userData : {},
     app: [""], // Genie tags
